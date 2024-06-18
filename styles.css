@@ -6,11 +6,15 @@
 
 /* YOUR CODE HERE: Change the background-color property of the <body> tag to a different color of your choice. */
 body {
+<<<<<<< HEAD
   background-color: rgb(50, 124, 203);
+=======
+  background-color: rgb(81, 221, 116);
+>>>>>>> feature/marvin
 }
 
 .page-header {
-  text-align: center;
+  text-align: center; 
 }
 
 .container {

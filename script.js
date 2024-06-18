@@ -13,27 +13,36 @@ const poems = [
     author: "Ernie",
     poem: "Roses are red \n Violets are blue \n Jerry Seinfeld is considering \n Making Bee Movie 2",
     image: "bee.jpeg",
+<<<<<<< HEAD
   },  
   {
     author: "Katrina",
     poem: "Not waving but drowning \n The ocean is blue \n The workload has got me sinking \n But how are you?",
     image: "waving.jpeg",
   },  
+=======
+  },
+  {
+    author: "Marvin",
+    poem: "Roses are red \n Coding is fun \n With JavaScript and GitHub \n Our project's well done",
+    image: "code.jpg", 
+  }
+>>>>>>> feature/marvin
 ];
 
 let displayPoems = (array) => {
   let html = "";
   let poemDiv = document.getElementById("poems");
 
-  poemArray = array.forEach((poem) => {
+  array.forEach((poem) => {
     html += `
     <div class="poem">
-        <img class="poem__image" src="./assets/${poem.image}"/>
+        <img class="poem__image" src="./assets/${poem.image}" />
         <div class="poem__author">
             Author: ${poem.author}
         </div>
         <div class="poem__content">
-            ${poem.poem}
+            ${poem.poem.replace(/\n/g, '<br>')}
         </div>
     </div>
     `;
